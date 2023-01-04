@@ -5,13 +5,9 @@ Configuration used on my Pi-hole.
 - `distracting.hosts` - might be useful in controlled dosages;
 - `always-blocked.hosts` - never useful.
 
-## ROADMAP
-
-- [ ] Add the link to the blog post once it's ready.
-
 ## Scripts
 
-`sudo crontab -e` then:
+`sudo crontab -e` and then edit the file with:
 
 ```conf
 # m h  dom mon dow   command
@@ -20,6 +16,8 @@ Configuration used on my Pi-hole.
 ```
 
 Unblocks distractions from 18:00 to 21:00.
+
+No need to restart cron. Il will pick the modifications to the file.
 
 ```shell
 #!/bin/bash
